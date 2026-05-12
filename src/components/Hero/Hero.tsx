@@ -28,13 +28,6 @@ const Hero = () => {
           </button>*/}
         </div>
 
-        {/*<div className={styles.imageWrapper}>
-          <img
-            src={heroImage}
-            alt="Cozy modern living room"
-            className={styles.heroImage}
-          />
-        </div>*/}
       </div>
     </section>
   );
