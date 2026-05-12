@@ -1,0 +1,96 @@
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--color-border);
+  padding: var(--spacing-sm) 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logoImage {
+  height: 32px;
+  width: auto;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-primary-dark);
+}
+
+.logoSub {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--color-primary-teal);
+}
+
+.navLinks {
+  display: flex;
+  gap: var(--spacing-lg);
+}
+
+.navLinks a {
+  color: var(--color-text-main);
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.navLinks a:hover {
+  color: var(--color-primary-teal);
+}
+
+.actions {
+  display: flex;
+  gap: var(--spacing-sm);
+  align-items: center;
+}
+
+.loginBtn {
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+  color: var(--color-text-main);
+  border: 1px solid var(--color-primary-dark);
+  border-radius: var(--radius-full);
+  transition: all 0.2s ease;
+}
+
+.loginBtn:hover {
+  background-color: var(--color-bg-mint);
+  border-color: var(--color-primary-teal);
+}
+
+.registerBtn {
+  padding: 0.6rem 1.2rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--color-primary-dark);
+  border-radius: var(--radius-full);
+  transition: all 0.2s ease;
+}
+
+.registerBtn:hover {
+  background-color: var(--color-primary-teal);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+  }
+}
